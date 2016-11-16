@@ -51,6 +51,7 @@ public class ReferenceRateCalculatorImpl implements ReferenceRateCalculator {
         double median = 0.0;
         boolean stale = true;
         if (fxPrices.size() > 0) {
+            stale = false;
             median = calculateMedian(fxPrices);
         }
         return new FxPriceImpl(median, median, null, null, stale);
