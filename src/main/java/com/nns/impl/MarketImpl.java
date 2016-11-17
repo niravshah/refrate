@@ -4,6 +4,8 @@ import com.nns.Market;
 import com.nns.PriceProvider;
 import com.nns.PriceSource;
 
+import java.util.Objects;
+
 public class MarketImpl implements Market {
 
     private PriceSource priceSource;
@@ -16,11 +18,37 @@ public class MarketImpl implements Market {
 
     @Override
     public PriceSource getPriceSource() {
-        return null;
+        return priceSource;
     }
 
     @Override
     public PriceProvider getPriceProvider() {
-        return null;
+        return priceProvider;
+    }
+
+    @Override
+    public boolean equals(Object o) {
+        if (this == o) {
+            return true;
+        }
+        if (!(o instanceof MarketImpl)) {
+            return false;
+        }
+        MarketImpl market = (MarketImpl) o;
+        return getPriceSource() == market.getPriceSource() &&
+                getPriceProvider() == market.getPriceProvider();
+    }
+
+    @Override
+    public int hashCode() {
+        return Objects.hash(getPriceSource(), getPriceProvider());
+    }
+
+    @Override
+    public String toString() {
+        return "MarketImpl{" +
+                "priceSource=" + priceSource +
+                ", priceProvider=" + priceProvider +
+                '}';
     }
 }

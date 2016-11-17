@@ -3,7 +3,6 @@ package com.nns.impl;
 import com.nns.FxPrice;
 import com.nns.Market;
 import com.nns.ReferenceRateCalculator;
-import com.nns.impl.builders.MarketBuilder;
 
 import java.util.ArrayList;
 import java.util.HashMap;
@@ -11,20 +10,20 @@ import java.util.List;
 import java.util.Map;
 import java.util.stream.Collectors;
 
-public class ReferenceRateCalculatorImpl implements ReferenceRateCalculator {
+import static com.nns.impl.repository.MarketRepository.getMarket;
 
+public class ReferenceRateCalculatorImpl implements ReferenceRateCalculator {
 
     private List<Market> marketsConfigured = new ArrayList<>();
     private Map<Market, FxPrice> marketFxPriceList = new HashMap<>();
-
 
     @Override
     public void onConfiguration(Configuration configuration) {
         int size = configuration.getSize();
         marketsConfigured = new ArrayList<>(size);
-        marketFxPriceList = new HashMap<>(size);
+        marketFxPriceList = new HashMap<>();
         for (int i = 0; i < size; i++) {
-            Market market = MarketBuilder.build(configuration.getSource(i), configuration.getProvider(i));
+            Market market = getMarket(configuration.getSource(i), configuration.getProvider(i));
             marketsConfigured.add(market);
             marketFxPriceList.put(market, null);
         }
@@ -32,7 +31,7 @@ public class ReferenceRateCalculatorImpl implements ReferenceRateCalculator {
 
     @Override
     public void onFxPrice(FxPrice fxPrice) {
-        Market market = MarketBuilder.build(fxPrice.getSource(), fxPrice.getProvider());
+        Market market = getMarket(fxPrice.getSource(), fxPrice.getProvider());
         if (marketsConfigured.contains(market)) {
             marketFxPriceList.put(market, fxPrice);
         }
@@ -68,5 +67,13 @@ public class ReferenceRateCalculatorImpl implements ReferenceRateCalculator {
         }
     }
 
+    @Override
+    public List<Market> getMarketsConfigured() {
+        return marketsConfigured;
+    }
 
+    @Override
+    public Map<Market, FxPrice> getMarketFxPriceList() {
+        return marketFxPriceList;
+    }
 }

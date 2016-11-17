@@ -1,4 +1,4 @@
-package com.nns.impl.builders;
+package com.nns.impl.repository;
 
 import com.nns.Market;
 import com.nns.PriceProvider;
@@ -8,11 +8,11 @@ import com.nns.impl.MarketImpl;
 import java.util.HashMap;
 import java.util.Map;
 
-public class MarketBuilder {
+public class MarketRepository {
 
     private static Map<PriceSource, Map<PriceProvider, Market>> markets = new HashMap<>();
 
-    public static Market build(PriceSource source, PriceProvider priceProvider) {
+    public static Market getMarket(PriceSource source, PriceProvider priceProvider) {
 
         Map<PriceProvider, Market> priceProviderMarketMap = markets.get(source);
         if (priceProviderMarketMap == null) {
