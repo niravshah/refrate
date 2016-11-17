@@ -22,11 +22,11 @@ public class ConfigurationImpl implements Configuration {
 
     @Override
     public PriceSource getSource(int index) {
-        return markets.get(index).getPriceSource();
+        return markets.get(index).getSource();
     }
 
     @Override
     public PriceProvider getProvider(int index) {
-        return markets.get(index).getPriceProvider();
+        return markets.get(index).getProvider();
     }
 }

@@ -3,27 +3,31 @@ package com.nns.impl;
 import com.nns.Market;
 import com.nns.PriceProvider;
 import com.nns.PriceSource;
+import com.nns.impl.randomizers.PriceProviderRandomizer;
+import com.nns.impl.randomizers.PriceSourceRandomizer;
+import io.github.benas.randombeans.annotation.Randomizer;
 
 import java.util.Objects;
 
 public class MarketImpl implements Market {
 
-    private PriceSource priceSource;
-    private PriceProvider priceProvider;
+    @Randomizer(PriceSourceRandomizer.class)
+    private PriceSource source;
+
+    @Randomizer(PriceProviderRandomizer.class)
+    private PriceProvider provider;
 
     public MarketImpl(PriceSource priceSource, PriceProvider priceProvider) {
-        this.priceSource = priceSource;
-        this.priceProvider = priceProvider;
+        this.source = priceSource;
+        this.provider = priceProvider;
     }
 
-    @Override
-    public PriceSource getPriceSource() {
-        return priceSource;
+    public PriceSource getSource() {
+        return source;
     }
 
-    @Override
-    public PriceProvider getPriceProvider() {
-        return priceProvider;
+    public PriceProvider getProvider() {
+        return provider;
     }
 
     @Override
@@ -35,20 +39,20 @@ public class MarketImpl implements Market {
             return false;
         }
         MarketImpl market = (MarketImpl) o;
-        return getPriceSource() == market.getPriceSource() &&
-                getPriceProvider() == market.getPriceProvider();
+        return getSource() == market.getSource() &&
+                getProvider() == market.getProvider();
     }
 
     @Override
     public int hashCode() {
-        return Objects.hash(getPriceSource(), getPriceProvider());
+        return Objects.hash(getSource(), getProvider());
     }
 
     @Override
     public String toString() {
         return "MarketImpl{" +
-                "priceSource=" + priceSource +
-                ", priceProvider=" + priceProvider +
+                "source=" + source +
+                ", provider=" + provider +
                 '}';
     }
 }
