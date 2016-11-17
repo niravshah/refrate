@@ -1,7 +1,8 @@
-package com.nns.impl;
+package com.nns.impl.builders;
 
 import com.nns.Market;
 import com.nns.ReferenceRateCalculator.Configuration;
+import com.nns.impl.ConfigurationImpl;
 
 import java.util.ArrayList;
 import java.util.List;

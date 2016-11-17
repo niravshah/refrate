@@ -8,6 +8,7 @@ import java.util.ArrayList;
 import java.util.HashMap;
 import java.util.List;
 import java.util.Map;
+import java.util.Objects;
 import java.util.stream.Collectors;
 
 import static com.nns.impl.repository.MarketRepository.getMarket;
@@ -40,19 +41,22 @@ public class ReferenceRateCalculatorImpl implements ReferenceRateCalculator {
     @Override
     public FxPrice calculate() {
 
+        double median = 0.0;
+        boolean stale = true;
+
         List<FxPrice> fxPrices = marketFxPriceList
                 .values()
                 .stream()
-                .filter(fxPrice -> !fxPrice.isStale())
+                .filter(Objects::nonNull)
+                .filter(FxPrice::isNotStale)
                 .sorted()
                 .collect(Collectors.toList());
 
-        double median = 0.0;
-        boolean stale = true;
         if (fxPrices.size() > 0) {
             stale = false;
             median = calculateMedian(fxPrices);
         }
+
         return new FxPriceImpl(median, median, null, null, stale);
     }
 
