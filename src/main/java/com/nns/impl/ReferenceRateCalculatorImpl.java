@@ -15,8 +15,8 @@ import static com.nns.impl.repository.MarketRepository.getMarket;
 
 public class ReferenceRateCalculatorImpl implements ReferenceRateCalculator {
 
-    private List<Market> marketsConfigured = new ArrayList<>();
-    private Map<Market, FxPrice> marketFxPriceList = new HashMap<>();
+    private List<Market> marketsConfigured;
+    private Map<Market, FxPrice> marketFxPriceList;
 
     @Override
     public void onConfiguration(Configuration configuration) {

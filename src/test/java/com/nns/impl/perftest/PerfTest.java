@@ -24,7 +24,7 @@ public class PerfTest {
 
     private final static Logger LOGGER = Logger.getLogger(PerfTest.class.getName());
     private final ReferenceRateCalculator calculator = new ReferenceRateCalculatorImpl();
-    private static final int TEST_POPULATION_SIZE = 1000;
+    private static final int TEST_POPULATION_SIZE = 10000;
     private Random randomGenerator = new Random();
     private final Stopwatch timer = Stopwatch.createUnstarted();
 
@@ -57,10 +57,10 @@ public class PerfTest {
         fxPrices
                 .stream()
                 .forEach(fxPrice -> {
-                    timer.start();
                     calculator.onFxPrice(fxPrice);
+                    timer.start();
                     calculator.calculate();
-                    LOGGER.info("Median Calculated In: " + timer.stop());
+                    System.out.println(timer.stop());
                     timer.reset();
                 });
     }

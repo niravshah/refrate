@@ -2,22 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="9ff888fc-3407-474f-a261-7942fc2b5dc3" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__com_google_guava_guava_19_0.xml" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/.idea/libraries/Maven__com_fasterxml_jackson_core_jackson_annotations_2_8_0.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/.idea/libraries/Maven__com_fasterxml_jackson_core_jackson_core_2_8_4.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/.idea/libraries/Maven__com_fasterxml_jackson_core_jackson_databind_2_8_4.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/.idea/libraries/Maven__io_github_benas_random_beans_3_4_0.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/.idea/libraries/Maven__io_github_lukehutch_fast_classpath_scanner_2_0_5.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_objenesis_objenesis_2_4.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/main/java/com/nns/impl/randomizers/PriceProviderRandomizer.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/main/java/com/nns/impl/randomizers/PriceSourceRandomizer.java" afterPath="" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/pom.xml" afterPath="$PROJECT_DIR$/pom.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/refrence-rate-calculator.iml" afterPath="$PROJECT_DIR$/refrence-rate-calculator.iml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/nns/PriceProvider.java" afterPath="$PROJECT_DIR$/src/main/java/com/nns/PriceProvider.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/nns/PriceSource.java" afterPath="$PROJECT_DIR$/src/main/java/com/nns/PriceSource.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/nns/impl/FxPriceImpl.java" afterPath="$PROJECT_DIR$/src/main/java/com/nns/impl/FxPriceImpl.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/nns/impl/MarketImpl.java" afterPath="$PROJECT_DIR$/src/main/java/com/nns/impl/MarketImpl.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/nns/impl/ReferenceRateCalculatorImpl.java" afterPath="$PROJECT_DIR$/src/main/java/com/nns/impl/ReferenceRateCalculatorImpl.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/test/java/com/nns/impl/perftest/PerfTest.java" afterPath="$PROJECT_DIR$/src/test/java/com/nns/impl/perftest/PerfTest.java" />
     </list>
     <ignored path="refrence-rate-calculator.iws" />
@@ -45,77 +31,18 @@
       <file leaf-file-name="ReferenceRateCalculatorImpl.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/com/nns/impl/ReferenceRateCalculatorImpl.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="102">
-              <caret line="17" column="4" selection-start-line="17" selection-start-column="4" selection-end-line="17" selection-end-column="4" />
+            <state relative-caret-position="340">
+              <caret line="31" column="0" selection-start-line="31" selection-start-column="0" selection-end-line="31" selection-end-column="0" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="PriceSource.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/com/nns/PriceSource.java">
+      <file leaf-file-name="FxPriceImpl.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/com/nns/impl/FxPriceImpl.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="595">
-              <caret line="35" column="13" selection-start-line="35" selection-start-column="13" selection-end-line="35" selection-end-column="13" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="PriceProvider.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/com/nns/PriceProvider.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="544">
-              <caret line="32" column="14" selection-start-line="32" selection-start-column="14" selection-end-line="32" selection-end-column="14" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="MarketImpl.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/com/nns/impl/MarketImpl.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="221">
-              <caret line="13" column="35" selection-start-line="13" selection-start-column="35" selection-end-line="13" selection-end-column="35" />
-              <folding>
-                <element signature="e#442#443#0" expanded="false" />
-                <element signature="e#471#472#0" expanded="false" />
-                <element signature="e#513#514#0" expanded="false" />
-                <element signature="e#544#545#0" expanded="false" />
-                <element signature="e#935#936#0" expanded="false" />
-                <element signature="e#998#999#0" expanded="false" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="pom.xml" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/pom.xml">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="153">
-              <caret line="9" column="0" selection-start-line="9" selection-start-column="0" selection-end-line="9" selection-end-column="0" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="ReferenceRateCalculator.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/com/nns/ReferenceRateCalculator.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="119">
-              <caret line="10" column="12" selection-start-line="10" selection-start-column="12" selection-end-line="10" selection-end-column="12" />
-              <folding>
-                <element signature="imports" expanded="false" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="refrence-rate-calculator.iml" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/refrence-rate-calculator.iml">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="34">
-              <caret line="2" column="64" selection-start-line="2" selection-start-column="64" selection-end-line="2" selection-end-column="64" />
+            <state relative-caret-position="17">
+              <caret line="9" column="55" selection-start-line="9" selection-start-column="45" selection-end-line="9" selection-end-column="55" />
               <folding />
             </state>
           </provider>
@@ -124,53 +51,10 @@
       <file leaf-file-name="PerfTest.java" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/test/java/com/nns/impl/perftest/PerfTest.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="286">
-              <caret line="34" column="53" selection-start-line="34" selection-start-column="53" selection-end-line="34" selection-end-column="53" />
+            <state relative-caret-position="218">
+              <caret line="27" column="50" selection-start-line="27" selection-start-column="50" selection-end-line="27" selection-end-column="50" />
               <folding>
                 <element signature="imports" expanded="true" />
-                <element signature="e#3083#3084#0" expanded="true" />
-                <element signature="e#3166#3167#0" expanded="true" />
-                <element signature="e#3205#3206#0" expanded="true" />
-                <element signature="e#3257#3258#0" expanded="true" />
-                <element signature="e#3290#3291#0" expanded="true" />
-                <element signature="e#3339#3340#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="FxPriceImpl.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/com/nns/impl/FxPriceImpl.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="221">
-              <caret line="13" column="0" selection-start-line="13" selection-start-column="0" selection-end-line="13" selection-end-column="0" />
-              <folding>
-                <element signature="e#919#920#0" expanded="false" />
-                <element signature="e#945#946#0" expanded="false" />
-                <element signature="e#991#992#0" expanded="false" />
-                <element signature="e#1019#1020#0" expanded="false" />
-                <element signature="e#1065#1066#0" expanded="false" />
-                <element signature="e#1093#1094#0" expanded="false" />
-                <element signature="e#1142#1143#0" expanded="false" />
-                <element signature="e#1171#1172#0" expanded="false" />
-                <element signature="e#1223#1224#0" expanded="false" />
-                <element signature="e#1252#1253#0" expanded="false" />
-                <element signature="e#1308#1309#0" expanded="false" />
-                <element signature="e#1339#1340#0" expanded="false" />
-                <element signature="e#1924#1925#0" expanded="false" />
-                <element signature="e#2020#2021#0" expanded="false" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="MarketRepository.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/com/nns/impl/repository/MarketRepository.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="102">
-              <caret line="12" column="86" selection-start-line="12" selection-start-column="86" selection-end-line="12" selection-end-column="86" />
-              <folding>
-                <element signature="imports" expanded="false" />
               </folding>
             </state>
           </provider>
@@ -224,11 +108,11 @@
         <option value="$PROJECT_DIR$/src/test/java/com/nns/impl/perftest/randomizers/PriceSourceRandomizer.java" />
         <option value="$PROJECT_DIR$/src/test/java/com/nns/impl/perftest/randomizers/PriceProviderRandomizer.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/nns/impl/MarketImpl.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/nns/impl/FxPriceImpl.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/nns/PriceProvider.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/nns/PriceSource.java" />
         <option value="$PROJECT_DIR$/pom.xml" />
         <option value="$PROJECT_DIR$/refrence-rate-calculator.iml" />
+        <option value="$PROJECT_DIR$/src/main/java/com/nns/impl/FxPriceImpl.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/nns/impl/ReferenceRateCalculatorImpl.java" />
         <option value="$PROJECT_DIR$/src/test/java/com/nns/impl/perftest/PerfTest.java" />
       </list>
@@ -696,24 +580,24 @@
       <module name="refrence-rate-calculator" />
       <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
       <option name="ALTERNATIVE_JRE_PATH" />
-      <option name="SUITE_NAME" />
+      <option name="SUITE_NAME" value="" />
       <option name="PACKAGE_NAME" value="com.nns.impl.perftest" />
       <option name="MAIN_CLASS_NAME" value="com.nns.impl.perftest.PerfTest" />
       <option name="METHOD_NAME" value="perftest" />
-      <option name="GROUP_NAME" />
+      <option name="GROUP_NAME" value="" />
       <option name="TEST_OBJECT" value="METHOD" />
-      <option name="VM_PARAMETERS" />
-      <option name="PARAMETERS" />
-      <option name="WORKING_DIRECTORY" />
-      <option name="OUTPUT_DIRECTORY" />
+      <option name="VM_PARAMETERS" value="-Xms1G" />
+      <option name="PARAMETERS" value="" />
+      <option name="WORKING_DIRECTORY" value="" />
+      <option name="OUTPUT_DIRECTORY" value="" />
       <option name="ANNOTATION_TYPE" />
       <option name="ENV_VARIABLES" />
       <option name="PASS_PARENT_ENVS" value="true" />
       <option name="TEST_SEARCH_SCOPE">
-        <value defaultName="singleModule" />
+        <value defaultName="moduleWithDependencies" />
       </option>
       <option name="USE_DEFAULT_REPORTERS" value="false" />
-      <option name="PROPERTIES_FILE" />
+      <option name="PROPERTIES_FILE" value="" />
       <envs />
       <properties />
       <listeners />
@@ -1236,44 +1120,44 @@
       <workItem from="1479300022125" duration="1131000" />
       <workItem from="1479311446025" duration="297000" />
       <workItem from="1479316361461" duration="4402000" />
-      <workItem from="1479396705160" duration="15146000" />
+      <workItem from="1479396705160" duration="17530000" />
     </task>
     <servers />
   </component>
   <component name="TestHistory">
-    <history-entry file="PerfTest_perftest - 2016.11.18 at 12h 56m 54s.xml">
+    <history-entry file="PerfTest_perftest - 2016.11.18 at 13h 42m 16s.xml">
       <configuration name="PerfTest.perftest" configurationId="TestNG" />
     </history-entry>
-    <history-entry file="PerfTest_perftest - 2016.11.18 at 12h 57m 54s.xml">
+    <history-entry file="PerfTest_perftest - 2016.11.18 at 13h 47m 43s.xml">
       <configuration name="PerfTest.perftest" configurationId="TestNG" />
     </history-entry>
-    <history-entry file="PerfTest_perftest - 2016.11.18 at 13h 09m 58s.xml">
+    <history-entry file="PerfTest_perftest - 2016.11.18 at 13h 48m 04s.xml">
       <configuration name="PerfTest.perftest" configurationId="TestNG" />
     </history-entry>
-    <history-entry file="PerfTest_perftest - 2016.11.18 at 13h 12m 43s.xml">
+    <history-entry file="PerfTest_perftest - 2016.11.18 at 13h 49m 35s.xml">
       <configuration name="PerfTest.perftest" configurationId="TestNG" />
     </history-entry>
-    <history-entry file="PerfTest_perftest - 2016.11.18 at 13h 12m 56s.xml">
+    <history-entry file="PerfTest_perftest - 2016.11.18 at 13h 49m 54s.xml">
       <configuration name="PerfTest.perftest" configurationId="TestNG" />
     </history-entry>
-    <history-entry file="PerfTest_perftest - 2016.11.18 at 13h 15m 16s.xml">
+    <history-entry file="PerfTest_perftest - 2016.11.18 at 14h 06m 59s.xml">
       <configuration name="PerfTest.perftest" configurationId="TestNG" />
     </history-entry>
-    <history-entry file="PerfTest_perftest - 2016.11.18 at 13h 15m 46s.xml">
+    <history-entry file="PerfTest_perftest - 2016.11.18 at 14h 07m 51s.xml">
       <configuration name="PerfTest.perftest" configurationId="TestNG" />
     </history-entry>
-    <history-entry file="PerfTest_perftest - 2016.11.18 at 13h 17m 05s.xml">
+    <history-entry file="PerfTest_perftest - 2016.11.18 at 14h 08m 13s.xml">
       <configuration name="PerfTest.perftest" configurationId="TestNG" />
     </history-entry>
-    <history-entry file="PerfTest_perftest - 2016.11.18 at 13h 18m 11s.xml">
+    <history-entry file="PerfTest_perftest - 2016.11.18 at 14h 08m 58s.xml">
       <configuration name="PerfTest.perftest" configurationId="TestNG" />
     </history-entry>
-    <history-entry file="PerfTest_perftest - 2016.11.18 at 13h 27m 37s.xml">
+    <history-entry file="PerfTest_perftest - 2016.11.18 at 14h 10m 17s.xml">
       <configuration name="PerfTest.perftest" configurationId="TestNG" />
     </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="31985000" />
+    <option name="totallyTimeSpent" value="34369000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1936" height="1186" extended-state="6" />
@@ -1572,29 +1456,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/nns/impl/FxPriceImpl.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="221">
-          <caret line="13" column="0" selection-start-line="13" selection-start-column="0" selection-end-line="13" selection-end-column="0" />
-          <folding>
-            <element signature="e#919#920#0" expanded="false" />
-            <element signature="e#945#946#0" expanded="false" />
-            <element signature="e#991#992#0" expanded="false" />
-            <element signature="e#1019#1020#0" expanded="false" />
-            <element signature="e#1065#1066#0" expanded="false" />
-            <element signature="e#1093#1094#0" expanded="false" />
-            <element signature="e#1142#1143#0" expanded="false" />
-            <element signature="e#1171#1172#0" expanded="false" />
-            <element signature="e#1223#1224#0" expanded="false" />
-            <element signature="e#1252#1253#0" expanded="false" />
-            <element signature="e#1308#1309#0" expanded="false" />
-            <element signature="e#1339#1340#0" expanded="false" />
-            <element signature="e#1924#1925#0" expanded="false" />
-            <element signature="e#2020#2021#0" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/nns/PriceProvider.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="544">
@@ -1639,24 +1500,26 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/nns/impl/ReferenceRateCalculatorImpl.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="102">
-          <caret line="17" column="4" selection-start-line="17" selection-start-column="4" selection-end-line="17" selection-end-column="4" />
+        <state relative-caret-position="340">
+          <caret line="31" column="0" selection-start-line="31" selection-start-column="0" selection-end-line="31" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/nns/impl/FxPriceImpl.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="17">
+          <caret line="9" column="55" selection-start-line="9" selection-start-column="45" selection-end-line="9" selection-end-column="55" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/test/java/com/nns/impl/perftest/PerfTest.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="286">
-          <caret line="34" column="53" selection-start-line="34" selection-start-column="53" selection-end-line="34" selection-end-column="53" />
+        <state relative-caret-position="218">
+          <caret line="27" column="50" selection-start-line="27" selection-start-column="50" selection-end-line="27" selection-end-column="50" />
           <folding>
             <element signature="imports" expanded="true" />
-            <element signature="e#3083#3084#0" expanded="true" />
-            <element signature="e#3166#3167#0" expanded="true" />
-            <element signature="e#3205#3206#0" expanded="true" />
-            <element signature="e#3257#3258#0" expanded="true" />
-            <element signature="e#3290#3291#0" expanded="true" />
-            <element signature="e#3339#3340#0" expanded="true" />
           </folding>
         </state>
       </provider>
