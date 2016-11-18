@@ -3,18 +3,14 @@ package com.nns.impl;
 import com.nns.Market;
 import com.nns.PriceProvider;
 import com.nns.PriceSource;
-import com.nns.impl.randomizers.PriceProviderRandomizer;
-import com.nns.impl.randomizers.PriceSourceRandomizer;
-import io.github.benas.randombeans.annotation.Randomizer;
-
 import java.util.Objects;
 
 public class MarketImpl implements Market {
 
-    @Randomizer(PriceSourceRandomizer.class)
+
     private PriceSource source;
 
-    @Randomizer(PriceProviderRandomizer.class)
+
     private PriceProvider provider;
 
     public MarketImpl(PriceSource priceSource, PriceProvider priceProvider) {

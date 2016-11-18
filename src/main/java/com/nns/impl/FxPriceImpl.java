@@ -1,11 +1,9 @@
 package com.nns.impl;
 
 import com.nns.FxPrice;
+import com.nns.Market;
 import com.nns.PriceProvider;
 import com.nns.PriceSource;
-import com.nns.impl.randomizers.PriceProviderRandomizer;
-import com.nns.impl.randomizers.PriceSourceRandomizer;
-import io.github.benas.randombeans.annotation.Randomizer;
 
 import java.util.Objects;
 
@@ -13,11 +11,7 @@ public class FxPriceImpl implements FxPrice, Comparable {
 
     private double bid;
     private double offer;
-
-    @Randomizer(PriceSourceRandomizer.class)
     private PriceSource source;
-
-    @Randomizer(PriceProviderRandomizer.class)
     private PriceProvider provider;
     private boolean stale;
 
@@ -26,6 +20,14 @@ public class FxPriceImpl implements FxPrice, Comparable {
         this.offer = offer;
         this.source = source;
         this.provider = provider;
+        this.stale = stale;
+    }
+
+    public FxPriceImpl(double bid, double offer, Market market, boolean stale) {
+        this.bid = bid;
+        this.offer = offer;
+        this.source = market.getSource();
+        this.provider = market.getProvider();
         this.stale = stale;
     }
 
