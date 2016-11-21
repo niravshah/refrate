@@ -1,7 +1,6 @@
 package com.nns.impl;
 
 import com.nns.FxPrice;
-import com.nns.Market;
 import com.nns.PriceProvider;
 import com.nns.PriceSource;
 
@@ -20,14 +19,6 @@ public class FxPriceImpl implements FxPrice, Comparable {
         this.offer = offer;
         this.source = source;
         this.provider = provider;
-        this.stale = stale;
-    }
-
-    public FxPriceImpl(double bid, double offer, Market market, boolean stale) {
-        this.bid = bid;
-        this.offer = offer;
-        this.source = market.getSource();
-        this.provider = market.getProvider();
         this.stale = stale;
     }
 

@@ -53,7 +53,7 @@ public class PerformanceTest {
     }
 
     @Test
-    public void perftest() {
+    public void measurePerformance() {
 
         final Configuration configuration = new ConfigurationImpl(testMarkets);
         calculator.onConfiguration(configuration);
@@ -71,10 +71,13 @@ public class PerformanceTest {
     }
 
     private List<FxPrice> fxPriceList() {
-
+        Market market;
         List<FxPrice> fxPrices = new ArrayList<>(TEST_POPULATION_SIZE);
+
         for (int i = 0; i < TEST_POPULATION_SIZE; i++) {
-            fxPrices.add(new FxPriceImpl(dataProvider.randomLong(), dataProvider.randomLong(), dataProvider.randomFromList(testMarkets), dataProvider.randomBoolean()));
+            market = dataProvider.randomFromList(testMarkets);
+            fxPrices.add(new FxPriceImpl(dataProvider.randomLong(), dataProvider.randomLong(),
+                    market.getSource(), market.getProvider(), dataProvider.randomBoolean()));
         }
         return fxPrices;
     }
